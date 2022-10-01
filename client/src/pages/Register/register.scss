@@ -1,0 +1,56 @@
+.register{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(245, 238, 146, 0.548)
+      );
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper{
+        width: 40%;
+        padding: 20px;
+        background-color: rgba(255, 244, 182, 0.123);
+
+        .title{
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+
+        input{
+            flex: 1;
+            min-width: 30%;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            padding: 10px;
+        }
+        .agreement{
+            font-size: 12px;
+            margin: 20px 0px;
+        }
+        button{
+            width: 40%;
+            border: none;
+            padding: 15px 20px;
+            background-color: rgba(185, 163, 39, 0.959);
+            color: white;
+            cursor: pointer;
+
+            &:hover{
+                background-color: white;
+                color: rgba(95, 85, 30, 0.959);
+                font-weight: 700;
+            }
+        }
+        }
+    }
+  
+  
+}

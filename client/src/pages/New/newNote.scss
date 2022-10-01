@@ -1,0 +1,320 @@
+.newNote{
+    height: 100vh;
+    width: 100vw;
+
+    .wrapper{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: #c6c7ed;
+
+        .left{
+            flex: 1;
+            padding-left: 400px;
+            
+            .leftTop{
+                height: 80px;
+                padding-top: 50px;
+                position: relative;
+                
+                .date{
+                   width: 125px;
+                   height: 40px;
+                   position: absolute;
+                   left: -200px;
+                   top: 40px;
+                   padding: 6px;
+                   color: #5255c9;
+                   font-size: 20px;
+                   border: 0.5px solid rgb(237,236,198);
+                   border-radius: 5px;
+                   background-color: rgb(237,236,198);
+                  
+                  
+                }
+                .title{
+                    position: absolute;
+                    left: 86px;
+                    top: 50px;
+                    width: 670px;
+                    text-align: center;
+                    color: #30339b;
+                    border: 0.5px solid rgb(237,236,198);
+                    border-radius: 5px;
+                    font-size: 20px;
+                    background-color: rgb(237,236,198);
+
+                }
+
+            }
+            .leftBottom{
+                height: 700px;
+                padding-top: 20px;
+
+                .add-note{
+                    padding-top: 50px;
+                    height: 100%;
+                    position: relative;
+
+                    .noteContainer{
+                        height: 500px;
+                        width: 850px;
+                        display: flex;
+                        gap: 1px;
+                    
+                        
+
+                    textarea{
+                        height: 500px;
+                        width: 450px;
+                        border-radius: 5px;
+                        border: none;
+                       
+                      
+                        
+                        
+                    }
+                    .imgContainer{
+                        height: 500px;
+                        width: 400px;
+                        
+                   
+                       
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+
+                    }
+
+                }
+                   
+                    ::placeholder{
+                        font-size: 23px;
+                        padding: 10px;
+                        color: #5255c9;
+                        font-family: 'Handlee', cursive;
+
+                    }
+                    button{
+                        position: absolute;
+                        top: -60px;
+                        right: 200px;
+                        width: 80px;
+                        height: 45px;
+                        padding: 5px;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 17px;
+                        font-family: sans-serif;
+                        background-color: #fffb0de5;
+                        color: #5255c9;
+
+                        &:hover{
+                            background-color: #dbd98c;
+                            cursor: pointer;
+                        }
+
+
+                    }
+                    .icon{
+                        font-size: 60px;
+                        position: absolute;
+                        bottom: 40px;
+                        left: 420px;
+                        color: #30339b;
+                        cursor: pointer;
+                        
+                    }
+                }
+            }
+
+        }
+       
+    }
+}
+
+@media screen and (max-width: 767px){
+    .newNote{
+     
+        .wrapper{
+        flex-direction: column;
+        height: 100vh;
+         width: 100vw;
+
+            .left{
+                padding-left: 300px;
+                .leftTop{
+
+                    .date{
+                        left: -230px;
+                        top: 10px;
+                        width: 100px;
+                        height: 30px;
+                        padding: 5px;
+                        font-size: 15px;
+                       
+
+                    }
+
+                    .title{
+                        top: 150px;
+                        left: -200px;
+                        width: 200px;
+                        height: 110px;
+                        font-size: 15px;
+                        padding: 8px;
+                        border-radius: 25px;
+
+                        
+                        
+
+                    }
+                    
+                }
+                .leftBottom{
+                    align-items: center;
+                    position: relative;
+
+                    .add-note{
+                        padding-top: 0px;
+                        height: 50%;
+                        position: absolute;
+                        left: -200px;
+                        top: 250px;
+                       
+                        
+                 
+                       .noteContainer{
+                        width: 200px;
+                        height: 200px;
+                        flex-direction: column;
+                         gap: 0px;
+                         
+
+                        textarea{
+                            height: 200px;
+                            width: 200px;
+                           
+                            
+                 
+                           
+                        }
+
+                        .imgContainer{
+                            height: 100px;
+                            width: 100px;
+                            position: absolute;
+                            top: 230px;
+                            left: 0px;
+                            
+                            
+                           
+
+                          img{
+                            border-radius: 25px;
+                            
+
+                          }
+                            
+                        }
+                       }
+
+                       .icon{
+                        left: 150px;
+                        bottom: 50px;
+                        font-size: 35px;
+                        
+                       }
+
+                       button{
+                        top: 400px;
+                        right: 90px;
+                        height: 35px;
+                        width: 60px;
+                        font-size: 13px;
+                        
+                       }
+
+                       ::placeholder{
+                        font-size: 13px;
+                       }
+                    }
+
+                }
+            }
+            
+        }
+      
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .newNote{
+        height: 1800px;
+        width: 1180px;
+
+        .wrapper{
+
+            .left{
+                .leftTop{
+
+                    .date{
+                        left: -350px;
+                    }
+                    .title{
+                        width: 450px;
+                        left: -10px;
+                    }
+                }
+                .leftBottom{
+                    align-items: center;
+                }
+                .add-note{
+                    .noteContainer{
+                        width: 450px;
+                        height: 2000px;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: center;
+                       gap: 120px;
+                       
+                      
+
+                       textarea{
+                        width: 1000px;
+                        height: 700px;
+                        margin-right: 400px;
+                        margin-bottom: 100px;
+                        border-radius: 25px;
+                        
+                        
+                       }
+
+                       .imgContainer{
+                        height: 50px;
+                        width: 50px;
+                        margin-right: 750px;
+                        margin-top: 550px;
+                       
+                        
+
+                        img{
+                            border-radius: 25px;
+                            height: 50%;
+                            width: 50%;
+
+                        }
+                        
+                        
+
+                       }
+                       
+                    }
+                }
+            }
+        }
+    }
+}

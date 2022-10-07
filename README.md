@@ -2,7 +2,7 @@
 
 ### [Live Site](https://daily-gratitude-app.herokuapp.com/)
 
-![Gratitude Journal](https://i.postimg.cc/9FPz4yTt/gratitude-journal-home.png)
+![Gratitude Journal](https://i.postimg.cc/TPyBHMVd/gratitude-journal-journal.png)
 
 ## Introduction
 The Gratitude Journal is a CRUD application to make daily gratitude. 
@@ -29,7 +29,7 @@ Username: test
 
 Password: test
 
-## Running Home Flora Locally
+## Running Gratitude Journal Locally
 1. Clone the project.
 2. install dependencies by running (npm install or yarn install) in the command line/ terminal.
 3. set the required environment variables: (PORT- MongoDB URL - JWT secret ) 

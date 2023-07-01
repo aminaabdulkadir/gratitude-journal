@@ -1,6 +1,5 @@
 # Gratitude Journal.
 
-### [Live Site](https://daily-gratitude-app.herokuapp.com/)
 
 ![Gratitude Journal](https://i.postimg.cc/TPyBHMVd/gratitude-journal-journal.png)
 
